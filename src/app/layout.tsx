@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import { Poppins } from "next/font/google";
+import { Roboto } from "next/font/google";
 import "./globals.css";
 
-const font = Poppins({ weight: "400", subsets: ["latin"] });
+const font = Roboto({ weight: "400", subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Ranchi's smile",
@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-      <link rel="icon" href="/tooth.svg" sizes="any" />
+        <link rel="icon" href="/tooth.svg" sizes="any" />
       </head>
       <body className={font.className}>{children}</body>
     </html>

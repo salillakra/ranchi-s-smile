@@ -1,10 +1,14 @@
+import Link from "next/link";
 import React from "react";
 
 const Appointment = () => {
   return (
-    <a href="#" className="rounded-md bg-secondary p-2 text-lg">
+    <Link
+      href="#"
+      className="hidden rounded-md bg-secondary border border-quaternary p-2 text-lg sm:inline-block"
+    >
       <span className="hover-underline-animation">Appointment</span>
-    </a>
+    </Link>
   );
 };
 

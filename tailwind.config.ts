@@ -8,6 +8,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      transitionDuration: {
+        2000: "2000ms",
+      },
       colors: {
         primary: "#FFF5E0",
         secondary: "#8DECB4",

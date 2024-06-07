@@ -4,10 +4,10 @@ import Link from "next/link";
 const AppointmentButton = () => {
   return (
     <Link
-      href="/appointment"
-      className="mt-16 w-32 rounded-lg bg-primary p-4 text-quaternary"
+      href={"/appointment"}
+      className="before:ease relative grid h-12 w-40 place-items-center overflow-hidden rounded-md border border-quaternary bg-primary text-quaternary shadow-2xl transition-all before:absolute before:right-0 before:top-0 before:h-12 before:w-6 before:translate-x-12 before:rotate-6 before:bg-tertiary before:opacity-10 before:duration-700 hover:shadow-primary hover:before:-translate-x-40"
     >
-      Appointment
+      <span className="relative z-10">Book Appointment</span>
     </Link>
   );
 };

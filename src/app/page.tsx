@@ -1,7 +1,7 @@
-import Appointment from "@/components/heading/Appointment";
-import Hero from "@/components/heading/Hero";
-import Info from "@/components/heading/Info";
-import Menu from "@/components/heading/Menu";
+import Appointment from "@/src/components/heading/Appointment";
+import Hero from "@/src/components/heading/Hero";
+import Info from "@/src/components/heading/Info";
+import Menu from "@/src/components/heading/Menu";
 import React from "react";
 
 const page = () => {
@@ -13,9 +13,9 @@ const page = () => {
           <Appointment />
         </div>
         <Hero />
-        <div className="flex items-center justify-center">
+        {/* <div className="flex items-center justify-center">
           <Info />
-        </div>
+        </div> */}
       </section>
     </>
   );

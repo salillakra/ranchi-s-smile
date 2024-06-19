@@ -5,7 +5,7 @@ const Appointment = () => {
   return (
     <Link
       href="#"
-      className="hidden rounded-md bg-secondary border border-quaternary p-2 text-lg sm:inline-block"
+      className="hidden rounded-md border border-quaternary bg-secondary p-2 text-lg sm:inline-block"
     >
       <span className="hover-underline-animation">Appointment</span>
     </Link>

@@ -8,13 +8,16 @@ const InfoCard = (props: { image: any; title: string; text: string }) => {
   return (
     <div className="flex w-52 flex-col items-center justify-center space-y-2">
       <div className="grid place-items-center">
-        <Image
-          src={props.image}
-          height={70}
-          width={70}
-          className="rounded-full transition-all hover:border hover:border-quaternary"
-          alt="doctor logo"
-        />
+        <div className="grid h-20 w-20 place-items-center overflow-hidden rounded-full">
+          <Image
+            src={props.image}
+            height={70}
+            width={70}
+            className="rounded-full transition-all hover:scale-110 hover:border hover:border-quaternary"
+            alt="doctor logo"
+          />
+        </div>
+
         <p className="text-lg font-thin text-secondary underline">
           {props.title}
         </p>
@@ -30,24 +33,24 @@ const Info = () => {
       id: 1,
       image: doctor_image,
       title: "Qualified Doctors",
-      text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima olabore eaque.",
+      text: "Experienced and certified professionals dedicated to your dental health.",
     },
     {
       id: 2,
       image: patient_image,
       title: "1K+ Happy Patients",
-      text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima olabore eaque.",
+      text: "Join our community of over 1,000 satisfied patients with beautiful smiles.",
     },
     {
       id: 3,
       image: tech_image,
       title: "Advanced Tech",
-      text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima olabore eaque.",
+      text: "State-of-the-art technology for precise and comfortable dental treatments.",
     },
   ];
   return (
-    <div className="absolute grid h-60 place-items-center bg-primary md:w-1/2">
-      <div className="grid grid-cols-3 gap-4 p-4">
+    <div className="grid h-60 place-items-center rounded-xl bg-primary shadow-md shadow-quaternary">
+      <div className="grid-col-1 grid gap-4 p-4 lg:grid-cols-3">
         {infoCards.map((card) => (
           <InfoCard
             key={card.id}

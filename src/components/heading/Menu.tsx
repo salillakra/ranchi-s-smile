@@ -1,7 +1,4 @@
-"use client";
-
 import React from "react";
-import { isMobile } from "react-device-detect";
 
 const Icon = () => {
   return (
@@ -14,17 +11,11 @@ const Icon = () => {
 };
 
 const Menu = () => {
-  console.log(isMobile);
-  if (isMobile) {
-    console.log("this is a mobile phone");
-  }
   return (
-    <div className="w-30 border-quaternary border flex cursor-pointer items-center justify-center space-x-2 rounded-md p-2 sm:bg-secondary">
-      {!isMobile && (
-        <span className="hover-underline-animation hidden text-lg md:inline-block">
-          Menu
-        </span>
-      )}
+    <div className="w-30 flex cursor-pointer items-center justify-center space-x-2 rounded-md border border-quaternary p-2 sm:bg-secondary">
+      <span className="hover-underline-animation hidden text-lg md:inline-block">
+        Menu
+      </span>
       <Icon />
     </div>
   );

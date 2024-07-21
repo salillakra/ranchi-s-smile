@@ -16,6 +16,7 @@ const config: Config = {
         secondary: "#8DECB4",
         tertiary: "#41B06E",
         quaternary: "#141E46",
+        pentenary: "#D9D9D9",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

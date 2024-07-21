@@ -1,11 +1,11 @@
-import Appointment from "@/src/components/heading/Appointment";
-import Hero from "@/src/components/heading/Hero";
-import Info from "@/src/components/heading/Info";
-import Menu from "@/src/components/heading/Menu";
+import Appointment from "@/src/components/Heading/Appointment";
+import Hero from "@/src/components/Heading/Hero";
+import Info from "@/src/components/Heading/Info";
+import Menu from "@/src/components/Heading/Menu";
 import React from "react";
-import Info_mobile from "../components/heading/Info_mobile";
+import Info_mobile from "../components/Heading/Info_mobile";
 import Aboutus from "../components/AboutUs/Aboutus";
-import Card from "../components/AboutUs/Card";
+import Work from "../components/WorkProcess/Work";
 
 const page = () => {
   return (
@@ -23,10 +23,15 @@ const page = () => {
           <Info_mobile />
         </div>
       </section>
-      <div className="h-[150vh] bg-gradient-to-b from-secondary to-tertiary">
+      <section className="bg-gradient-to-b from-secondary to-tertiary pb-20 pt-6">
         <Aboutus />
-        <Card />
-      </div>
+      </section>
+
+      {/* how we work */}
+
+      <section className=" bg-gradient-to-b from-tertiary to-primary">
+        <Work />
+      </section>
     </>
   );
 };

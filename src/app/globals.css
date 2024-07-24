@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Custom CSS */
+
 .hover-underline-animation {
   display: inline-block;
   position: relative;
@@ -32,4 +34,9 @@
   border-top: 5px solid transparent;
   border-bottom: 5px solid transparent;
   border-left: 5px solid black;
+}
+
+/* gradient text */
+.gradient-text {
+  @apply inline-block bg-gradient-to-r from-quaternary via-tertiary to-black bg-clip-text text-transparent;
 }

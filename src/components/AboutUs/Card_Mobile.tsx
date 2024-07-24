@@ -47,9 +47,9 @@ const Card_Mobile = () => {
       >
         {Card_Data.map((item) => (
           <SwiperSlide key={item.id}>
-            <div className="mt-12 flex h-52 sm:h-60 w-full justify-center">
-              <div className="relative cursor-pointer grid h-40 sm:h-48 w-80 sm:w-96 place-items-center rounded-lg bg-pentenary p-2">
-                <p className="text-center sm:text-md text-sm text-quaternary">
+            <div className="mt-20 flex h-52 w-full justify-center sm:h-60">
+              <div className="relative grid h-40 w-80 cursor-pointer place-items-center rounded-lg bg-pentenary p-2 sm:h-48 sm:w-96">
+                <p className="sm:text-md text-center text-sm text-quaternary">
                   {item.text}
                 </p>
                 <div className="absolute -top-7 z-10 rounded-full bg-primary p-2">

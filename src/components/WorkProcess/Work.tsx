@@ -1,5 +1,6 @@
 import React from "react";
 import Arrow from "../Arrow";
+import AppointmentButton from "../Heading/AppointmentButton";
 
 const Cards = [
   {
@@ -58,17 +59,15 @@ const Work = () => {
         SectionText="OUR WORK PROCESS"
       />
 
-      <div className="mt-24 text-quaternary flex flex-col items-center justify-center gap-5">
-        <h2 className=" text-3xl lg:text-5xl">
-          Let's See How we Work
-        </h2>
+      <div className="mt-24 flex flex-col items-center justify-center gap-5 text-quaternary">
+        <h2 className="text-3xl lg:text-5xl">Let's See How we Work</h2>
         <p className="text-md px-8 text-center lg:w-[38rem]">
           Advanced technology and meticulous techniques ensure precision and
           accuracy in every dental procedure.
         </p>
       </div>
       {/* Work Process Cards */}
-      <div className=" mt-10 overflow-auto  flex flex-col sm:flex-row items-center justify-between gap-10  px-20">
+      <div className="mt-10 flex flex-col items-center justify-between gap-10 px-20 py-5 sm:flex-row sm:overflow-auto">
         {Cards.map((card, index) => (
           <WorkCard
             key={index}
@@ -77,6 +76,10 @@ const Work = () => {
             Description={card.Description}
           />
         ))}
+      </div>
+      {/* appointment button */}
+      <div className="grid place-items-center py-20">
+        <AppointmentButton />
       </div>
     </>
   );

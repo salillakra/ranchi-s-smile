@@ -27,7 +27,7 @@ const Card = () => {
   ];
   return (
     <>
-      <div className="hidden gap-10 lg:mx-28 lg:grid lg:w-1/2 lg:grid-cols-2">
+      <div className="hidden -translate-y-16 gap-10 lg:mx-28 lg:grid lg:w-1/2 lg:grid-cols-2">
         {/* Cards */}
         {Card_Data.map((card) => {
           return (

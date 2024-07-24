@@ -6,11 +6,11 @@ import Arrow from "@/src/components/Arrow";
 const Aboutus = () => {
   return (
     <>
-      <Arrow Image="/aboutUs.svg" SectionText=" About Us" />
+      <Arrow Image="/aboutUs.svg" SectionText="About Us" />
 
       {/* aboutus hero section */}
       <div className="flex items-center justify-between px-2 lg:px-10">
-        <section className="mt-8 md:p-8">
+        <section className="mt-10 sm:mt-0 md:p-8">
           <h1 className="text-2xl text-quaternary lg:text-5xl">
             Welcome To{" "}
             <span className="tracking-tighter text-primary">

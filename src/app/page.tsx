@@ -2,10 +2,11 @@ import Appointment from "@/src/components/Heading/Appointment";
 import Hero from "@/src/components/Heading/Hero";
 import Info from "@/src/components/Heading/Info";
 import Menu from "@/src/components/Heading/Menu";
-import React from "react";
-import Info_mobile from "../components/Heading/Info_mobile";
-import Aboutus from "../components/AboutUs/Aboutus";
-import Work from "../components/WorkProcess/Work";
+import Info_mobile from "@/src/components/Heading/Info_mobile";
+import Aboutus from "@/src/components/AboutUs/Aboutus";
+import Work from "@/src/components/WorkProcess/Work";
+import CHS from "@/src/components/Comprehensive Health Services/CHS";
+import Review from "../components/PatientReviews/Review";
 
 const page = () => {
   return (
@@ -23,14 +24,24 @@ const page = () => {
           <Info_mobile />
         </div>
       </section>
-      <section className="bg-gradient-to-b from-secondary to-tertiary pb-20 pt-6">
+      <section className="bg-gradient-to-b from-secondary to-tertiary pt-6">
         <Aboutus />
       </section>
 
       {/* how we work */}
 
-      <section className=" bg-gradient-to-b from-tertiary to-primary">
+      <section className="bg-gradient-to-b from-tertiary to-primary">
         <Work />
+      </section>
+
+      {/* comprehensive healthcare service */}
+      <section className="bg-gradient-to-br from-primary to-secondary">
+        <CHS />
+      </section>
+
+      {/* Customers review */}
+      <section className="h-[200vh] bg-gradient-to-b from-primary to-secondary">
+        <Review />
       </section>
     </>
   );

@@ -1,32 +1,51 @@
-import React from "react";
+"use client";
+
 import Arrow from "../Arrow";
 import Image from "next/image";
+import StarRating from "./ReviewStars";
+import { reviews } from "./Reviews";
 
-const Review = () => {
+import { A11y, Pagination, Autoplay } from "swiper/modules";
+import { SwiperSlide, Swiper } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+// import NavigationBtn from "./NavigationBtn";
+
+const ReviewCard = ({
+  name,
+  review,
+  rating,
+  image,
+}: {
+  name: string;
+  review: string;
+  rating: number;
+  image: string;
+}) => {
   return (
-    <>
-      <Arrow
-        Image="/PatientReviews/review-like-message-svgrepo-com.svg"
-        SectionText="Our Patient’s Review"
-      />
+    <div className="mt-14 flex justify-center pb-10">
+      <div className="flex flex-col items-start gap-16 px-5 sm:flex-row sm:px-20">
+        <div className="relative">
+          <div className="h-80 w-80 overflow-hidden rounded-xl bg-primary">
+            <Image
+              height={500}
+              width={500}
+              className="h-full object-cover grayscale transition-all hover:scale-95 hover:grayscale-0"
+              alt="Customer Image"
+              src={image}
+            />
+          </div>
 
-      <div className="flex">
-        <div className="relative h-80 w-80 bg-primary">
           <Image
-            height={500}
-            width={500}
-            className="h-full object-cover"
-            alt="Customer Image"
-            src="/PatientReviews/young-beautiful-woman-pink-warm-sweater-natural-look-smiling-portrait-isolated-long-hair.png"
-          />
-          <Image
-            className="absolute bottom-0 left-0"
+            className="absolute bottom-0 left-0 rounded-b-lg"
             src="/PatientReviews/wave.svg"
             height={500}
             width={500}
             alt="wave image"
           />
-          <div className="absolute -right-8 top-12 grid h-16 w-16 place-items-center overflow-hidden rounded-full bg-tertiary">
+          <div className="absolute -right-8 top-12 hidden h-16 w-16 place-items-center overflow-hidden rounded-full bg-tertiary sm:grid">
             <svg
               className="h-12 w-12"
               width="144"
@@ -43,17 +62,50 @@ const Review = () => {
           </div>
         </div>
 
-        {/* <div className="flex flex-col justify-center space-y-4">
-          <h3 className="text-2xl font-bold text-primary">
-            “I had a great experience with the doctor.”
-          </h3>
-          <p className="text-lg text-gray-500">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam
-            volutpat sed sed etiam. Nunc, etiam sed sit risus. Nunc, etiam sed
-            sit risus.
-          </p>
-</div> */}
+        <div className="flex flex-col justify-center space-y-8 sm:w-96">
+          <StarRating rating={rating} />
+          <p className="text-lg text-gray-500">{`"${review}"`}</p>
+
+          <p className="poppins-thin-italic text-right text-sm">{`- ${name}`}</p>
+        </div>
       </div>
+    </div>
+  );
+};
+
+const Review = () => {
+  return (
+    <>
+      <Arrow
+        Image="/PatientReviews/review-like-message-svgrepo-com.svg"
+        SectionText="Our Patient’s Review"
+      />
+
+      <Swiper
+        modules={[Pagination, Autoplay, A11y]}
+        className="mySwiper"
+        pagination={{
+          dynamicBullets: true,
+        }}
+        autoplay={{
+          waitForTransition: true,
+          delay: 5000,
+          disableOnInteraction: false,
+        }}
+      >
+        {reviews.map((review, index) => (
+          <SwiperSlide key={index}>
+            <ReviewCard
+              image={review.image}
+              name={review.name}
+              review={review.review}
+              rating={review.rating}
+            />
+          </SwiperSlide>
+        ))}
+      </Swiper>
+
+      {/* <NavigationBtn /> */}
     </>
   );
 };

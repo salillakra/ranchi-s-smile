@@ -1,4 +1,3 @@
-"use client";
 interface ArrowProps {
   Image: string;
   SectionText: string;
@@ -7,8 +6,8 @@ interface ArrowProps {
 
 const Arrow = ({ Image, SectionText, className }: ArrowProps) => {
   return (
-    <div className="relative sm:ml-5 inline-block border-b-2 border-quaternary pt-10">
-      <div className="flex items-center -space-x-2">
+    <div className="relative mr-5 inline-block border-b-2 border-quaternary pt-10 sm:ml-5">
+      <div className={`flex items-center -space-x-2 ${className}`}>
         <img
           src={Image}
           className="h-16 w-16 md:w-24"
@@ -17,7 +16,7 @@ const Arrow = ({ Image, SectionText, className }: ArrowProps) => {
           height={80}
         />
         <span className="text-xl text-quaternary md:text-2xl lg:text-3xl">
-          {SectionText}
+          {SectionText.toUpperCase()}
         </span>
       </div>
       {/* arrow */}

@@ -6,12 +6,15 @@ import Info_mobile from "@/src/components/Heading/Info_mobile";
 import Aboutus from "@/src/components/AboutUs/Aboutus";
 import Work from "@/src/components/WorkProcess/Work";
 import CHS from "@/src/components/Comprehensive Health Services/CHS";
-import Review from "../components/PatientReviews/Review";
+import Review from "@/src/components/PatientReviews/Review";
+import AppointmentSection from "@/src/components/GetAnAppointment/AppointmentSection";
+import BlogSection from "@/src/components/Blogs/BlogSection";
+import Newsletter from "@/src/components/NewsLetter/Newsletter";
 
 const page = () => {
   return (
     <>
-      <section className="bg-gradient-to-b from-primary to-secondary">
+      <div className="bg-gradient-to-b from-primary to-secondary">
         <div className="flex justify-between p-3 text-quaternary">
           <Menu />
           <Appointment />
@@ -23,26 +26,32 @@ const page = () => {
         <div className="block lg:hidden">
           <Info_mobile />
         </div>
-      </section>
-      <section className="bg-gradient-to-b from-secondary to-tertiary pt-6">
+      </div>
+      <div className="bg-gradient-to-b from-secondary to-tertiary pt-6">
         <Aboutus />
-      </section>
+      </div>
 
       {/* how we work */}
 
-      <section className="bg-gradient-to-b from-tertiary to-primary">
+      <div className="bg-gradient-to-b from-tertiary to-primary">
         <Work />
-      </section>
+      </div>
 
       {/* comprehensive healthcare service */}
-      <section className="bg-gradient-to-br from-primary to-secondary">
+      <div className="bg-gradient-to-br from-primary to-secondary">
         <CHS />
-      </section>
+      </div>
 
       {/* Customers review */}
-      <section className="h-[200vh] bg-gradient-to-b from-primary to-secondary">
+      {/* Appointment and  Blogs  */}
+      <div className="h-[500vh] bg-gradient-to-b from-primary to-secondary">
         <Review />
-      </section>
+        <AppointmentSection />
+        <BlogSection />
+        <Newsletter />
+      </div>
+
+      
     </>
   );
 };

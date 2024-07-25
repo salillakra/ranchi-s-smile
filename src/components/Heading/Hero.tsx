@@ -8,7 +8,7 @@ const Text = () => {
       <h1 className="md:text-md text-xs underline sm:text-sm lg:text-lg">
         Your Smile, Our Passion
       </h1>
-      <p className="w-full text-lg tracking-tight sm:w-80 md:w-auto md:text-4xl lg:text-6xl">
+      <p className="w-full text-lg tracking-tighter sm:w-80 md:w-auto md:text-4xl lg:text-6xl">
         Expert dental care for all ages. Book your appointment now for a
         healthy, confident smile!
       </p>

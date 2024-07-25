@@ -53,6 +53,7 @@ const CHS = () => {
   return (
     <div className="">
       <Arrow
+        className="space-x-2"
         Image="/Comprehensive Health Services/stethoscope-svgrepo-com.svg"
         SectionText="Comprehensive Health Services"
       />

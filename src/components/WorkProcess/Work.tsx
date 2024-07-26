@@ -67,7 +67,7 @@ const Work = () => {
         SectionText="OUR WORK PROCESS"
       />
 
-      <div className="mt-24 flex flex-col items-center justify-center gap-5 text-quaternary">
+      <div className="mt-14 flex flex-col items-center justify-center gap-5 text-quaternary">
         <h2 className="text-3xl lg:text-5xl">Let&apos;s See How we Work</h2>
         <p className="text-md px-8 text-center lg:w-[38rem]">
           Advanced technology and meticulous techniques ensure precision and
@@ -86,7 +86,7 @@ const Work = () => {
         ))}
       </div>
       {/* appointment button */}
-      <div className="grid place-items-center py-20">
+      <div className="grid place-items-center py-10">
         <AppointmentButton />
       </div>
     </>

@@ -10,7 +10,7 @@ const AppointmentPage = () => {
     const [time, setTime] = useState("");
     const [date, setDate] = useState("");
 
-    const handleSubmit = e => {
+    const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         console.log({
             name,

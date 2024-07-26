@@ -1,4 +1,9 @@
-export const reviews = [
+export const reviews: {
+  name: string;
+  review: string;
+  rating: number;
+  image: string;
+}[] = [
   {
     name: "Raj Sharma, Delhi",
     review:

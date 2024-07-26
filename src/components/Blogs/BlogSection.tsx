@@ -1,9 +1,7 @@
 import React from "react";
 import Arrow from "../Arrow";
 import Image from "next/image";
-
 import { blogdata } from "./BlogData";
-import BlogMobile from "./BlogMobile";
 
 export const Card = ({
   ImageSrc,
@@ -17,7 +15,7 @@ export const Card = ({
   HashTags: string[];
 }) => {
   return (
-    <div className=" max-w-sm overflow-hidden rounded bg-primary shadow-lg">
+    <div className="w-80 max-w-sm overflow-hidden rounded bg-primary shadow-lg sm:w-fit">
       <Image
         className="grayscale"
         height={300}
@@ -39,7 +37,7 @@ export const Card = ({
         {HashTags.map((tag, index) => (
           <span
             key={index}
-            className="mb-2 mr-2 inline-block rounded-full bg-gray-200 px-3 py-1 text-sm font-semibold text-gray-700"
+            className="poppins-light-italic mb-2 mr-2 inline-block rounded-full bg-gray-200 px-3 py-1 text-sm font-semibold text-gray-700"
           >
             {`#${tag}`}
           </span>
@@ -54,11 +52,11 @@ const BlogSection = () => {
     <>
       <Arrow
         className="space-x-2"
-        Image="/Blogs/blog-writing-svgrepo-com.svg"
+        ImageSource="/Blogs/blog-writing-svgrepo-com.svg"
         SectionText="our blogs"
       />
 
-      <div className="mt-5 hidden w-full justify-center gap-3 overflow-x-auto md:flex">
+      <div className="mt-5 flex w-full flex-wrap justify-center gap-3 overflow-hidden">
         {blogdata.map((data, index) => (
           <Card
             key={index}
@@ -68,10 +66,6 @@ const BlogSection = () => {
             HashTags={data.tags}
           />
         ))}
-      </div>
-
-      <div className="block md:hidden">
-        <BlogMobile />
       </div>
     </>
   );

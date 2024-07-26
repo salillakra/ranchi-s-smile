@@ -1,19 +1,21 @@
+import Image from "next/image";
+
 interface ArrowProps {
-  Image: string;
+  ImageSource: string;
   SectionText: string;
   className?: string;
 }
 
-const Arrow = ({ Image, SectionText, className }: ArrowProps) => {
+const Arrow = ({ ImageSource, SectionText, className }: ArrowProps) => {
   return (
     <div className="relative mr-5 inline-block border-b-2 border-quaternary pt-10 sm:ml-5">
       <div className={`flex items-center -space-x-2 ${className}`}>
-        <img
-          src={Image}
+        <Image
           className="h-16 w-16 md:w-24"
-          alt="About Us"
-          width={80}
-          height={80}
+          alt={SectionText}
+          width={100}
+          height={100}
+          src={ImageSource}
         />
         <span className="text-xl text-quaternary md:text-2xl lg:text-3xl">
           {SectionText.toUpperCase()}

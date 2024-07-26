@@ -1,7 +1,7 @@
 "use client";
 
-import { blogdata } from "./BlogData";
-import { Card } from "./BlogSection";
+import { blogdata } from "@/src/components/Blogs/BlogData";
+import { Card } from "@/src/components/Blogs/BlogSection";
 import { EffectCards, Autoplay, A11y } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 

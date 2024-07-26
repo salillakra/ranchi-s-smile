@@ -76,7 +76,7 @@ const Review = () => {
   return (
     <>
       <Arrow
-        Image="/PatientReviews/review-like-message-svgrepo-com.svg"
+        ImageSource="/PatientReviews/review-like-message-svgrepo-com.svg"
         SectionText="Our Patient’s Review"
       />
 

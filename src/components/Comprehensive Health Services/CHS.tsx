@@ -54,7 +54,7 @@ const CHS = () => {
     <div className="">
       <Arrow
         className="space-x-2"
-        Image="/Comprehensive Health Services/stethoscope-svgrepo-com.svg"
+        ImageSource="/Comprehensive Health Services/stethoscope-svgrepo-com.svg"
         SectionText="Comprehensive Health Services"
       />
       <div className="mt-20 grid grid-cols-1 gap-16 p-4 sm:gap-2 lg:grid-cols-3">

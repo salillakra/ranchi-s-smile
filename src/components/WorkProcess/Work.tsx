@@ -1,8 +1,14 @@
 import React from "react";
 import Arrow from "../Arrow";
 import AppointmentButton from "../Heading/AppointmentButton";
+import Image from "next/image";
 
-const Cards = [
+interface CardsType {
+  Image: string;
+  Title: string;
+  Description: string;
+}
+const Cards: CardsType[] = [
   {
     Image: "/WorkProcess/doctor-patient-svgrepo-com.svg",
     Title: "Seeing Patients",
@@ -24,12 +30,12 @@ const Cards = [
 ];
 
 const WorkCard = ({
-  Image,
+  ImageSource,
   Title,
   Description,
   className,
 }: {
-  Image: string;
+  ImageSource: string;
   Title: string;
   Description: string;
   className?: string;
@@ -39,8 +45,10 @@ const WorkCard = ({
       className={`flex flex-col items-center justify-center gap-3 ${className}`}
     >
       <div className="overflow-hidden rounded-full bg-primary p-2">
-        <img
-          src={Image}
+        <Image
+          height={400}
+          width={400}
+          src={ImageSource}
           alt="Work Process"
           className="h-14 w-14 transition-all hover:scale-125"
         />
@@ -55,12 +63,12 @@ const Work = () => {
   return (
     <>
       <Arrow
-        Image="/WorkProcess/injection-vaccine-medical-health-doctor-medicine-svgrepo-com.svg"
+        ImageSource="/WorkProcess/injection-vaccine-medical-health-doctor-medicine-svgrepo-com.svg"
         SectionText="OUR WORK PROCESS"
       />
 
       <div className="mt-24 flex flex-col items-center justify-center gap-5 text-quaternary">
-        <h2 className="text-3xl lg:text-5xl">Let's See How we Work</h2>
+        <h2 className="text-3xl lg:text-5xl">Let&apos;s See How we Work</h2>
         <p className="text-md px-8 text-center lg:w-[38rem]">
           Advanced technology and meticulous techniques ensure precision and
           accuracy in every dental procedure.
@@ -71,7 +79,7 @@ const Work = () => {
         {Cards.map((card, index) => (
           <WorkCard
             key={index}
-            Image={card.Image}
+            ImageSource={card.Image}
             Title={card.Title}
             Description={card.Description}
           />

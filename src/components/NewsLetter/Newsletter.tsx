@@ -64,7 +64,7 @@ const newsletter = () => {
           </div>
         </form>
         <div className="text-sm font-medium text-gray-500 dark:text-gray-300">
-          By subscribing, you agree with Ranchi's smile{" "}
+          By subscribing, you agree with Ranchi&apos;s smile{" "}
           <a
             rel="nofollow"
             href="#"

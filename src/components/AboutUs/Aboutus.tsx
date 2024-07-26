@@ -8,7 +8,7 @@ const Aboutus = () => {
     <>
       <Arrow
         className="-space-x-8"
-        Image="/aboutUs.svg"
+        ImageSource="/aboutUs.svg"
         SectionText="About Us"
       />
 
@@ -18,7 +18,7 @@ const Aboutus = () => {
           <h1 className="text-2xl text-quaternary lg:text-5xl">
             Welcome To{" "}
             <span className="poppins-regular tracking-tighter text-primary">
-              Ranchi's Smile
+              Ranchi&apos;s Smile
             </span>
           </h1>
           <p className="text-md my-8 text-primary lg:text-2xl">

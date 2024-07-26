@@ -10,10 +10,16 @@ import Review from "@/src/components/PatientReviews/Review";
 import AppointmentSection from "@/src/components/GetAnAppointment/AppointmentSection";
 import BlogSection from "@/src/components/Blogs/BlogSection";
 import Newsletter from "@/src/components/NewsLetter/Newsletter";
+import { Footer } from "@/src/components/Footer/Footer";
+
+/**
+ * Renders the main page of the application.
+ * @returns The JSX element representing the main page.
+ */
 
 const page = () => {
   return (
-    <>
+    <main>
       <div className="bg-gradient-to-b from-primary to-secondary">
         <div className="flex justify-between p-3 text-quaternary">
           <Menu />
@@ -44,15 +50,15 @@ const page = () => {
 
       {/* Customers review */}
       {/* Appointment and  Blogs  */}
-      <div className="h-[500vh] bg-gradient-to-b from-primary to-secondary">
+      <div className="bg-gradient-to-b from-primary to-secondary">
         <Review />
         <AppointmentSection />
         <BlogSection />
         <Newsletter />
       </div>
 
-      
-    </>
+      <Footer />
+    </main>
   );
 };
 

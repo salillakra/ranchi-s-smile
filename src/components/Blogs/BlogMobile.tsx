@@ -2,7 +2,7 @@
 
 import { blogdata } from "./BlogData";
 import { Card } from "./BlogSection";
-import { EffectCards } from "swiper/modules";
+import { EffectCards, Autoplay, A11y } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
@@ -15,7 +15,11 @@ const BlogMobile = () => {
       <Swiper
         effect={"cards"}
         grabCursor={true}
-        modules={[EffectCards]}
+        modules={[EffectCards, Autoplay, A11y]}
+        autoplay={{
+          delay: 4000,
+          disableOnInteraction: true,
+        }}
         className="mySwiper mt-10"
       >
         {blogdata.map((blog, index) => (

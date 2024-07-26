@@ -3,11 +3,11 @@
 @tailwind utilities;
 
 /* Custom CSS */
-/* 
+
 body,
 html {
-  overflow-x: hidden;
-} */
+  @apply bg-primary;
+}
 
 .hover-underline-animation {
   display: inline-block;

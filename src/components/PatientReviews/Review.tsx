@@ -11,7 +11,6 @@ import { SwiperSlide, Swiper } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
-// import NavigationBtn from "./NavigationBtn";
 
 const ReviewCard = ({
   name,
@@ -32,7 +31,7 @@ const ReviewCard = ({
             <Image
               height={500}
               width={500}
-              className="h-full object-cover grayscale transition-all hover:scale-95 hover:grayscale-0"
+              className="h-full object-cover grayscale duration-100 ease-linear hover:scale-105 hover:grayscale-0"
               alt="Customer Image"
               src={image}
             />
@@ -104,8 +103,6 @@ const Review = () => {
           </SwiperSlide>
         ))}
       </Swiper>
-
-      {/* <NavigationBtn /> */}
     </>
   );
 };

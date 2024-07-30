@@ -3,7 +3,7 @@
 import Arrow from "../Arrow";
 import Image from "next/image";
 import StarRating from "./ReviewStars";
-import { reviews } from "./Reviews";
+import { reviews } from "./Reviews_Data";
 
 import { A11y, Pagination, Autoplay } from "swiper/modules";
 import { SwiperSlide, Swiper } from "swiper/react";
@@ -76,6 +76,7 @@ const Review = () => {
   return (
     <>
       <Arrow
+        className="space-x-1"
         ImageSource="/PatientReviews/review-like-message-svgrepo-com.svg"
         SectionText="Our Patient’s Review"
       />

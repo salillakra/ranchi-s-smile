@@ -73,9 +73,9 @@ const AppointmentSection = () => {
         ImageSource="/GetAnAppointment/clock.svg"
       />
       <div className="flex justify-start lg:mx-20">
-        <div className="mt-20 w-full space-y-8 px-2 md:w-[40rem]">
+        <div className="mt-8 w-full space-y-5 px-2 md:mt-20 md:w-[40rem]">
           <p className="text-4xl">Easy and Convenient Scheduling</p>
-          <p className="text-lg">
+          <p className="poppins-regular text-lg">
             Fill out our simple form or give us a call to schedule your
             appointment at a time that works best for you. Our friendly staff is
             here to help you every step of the way. Don&apos;t wait—secure your

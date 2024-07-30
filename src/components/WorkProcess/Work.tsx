@@ -53,7 +53,7 @@ const WorkCard = ({
           className="h-14 w-14 transition-all hover:scale-125"
         />
       </div>
-      <h3 className="text-xl font-thin">{Title}</h3>
+      <h3 className="text-xl font-thin underline">{Title}</h3>
       <p className="text-md w-[20rem] text-center">{Description}</p>
     </div>
   );
@@ -67,9 +67,9 @@ const Work = () => {
         SectionText="OUR WORK PROCESS"
       />
 
-      <div className="mt-14 flex flex-col items-center justify-center gap-5 text-quaternary">
+      <div className="mt-8 flex flex-col justify-center gap-3 px-2 text-quaternary sm:gap-5 md:mt-14 md:items-center">
         <h2 className="text-3xl lg:text-5xl">Let&apos;s See How we Work</h2>
-        <p className="text-md px-8 text-center lg:w-[38rem]">
+        <p className="text-md md:px-8 md:text-center lg:w-[38rem]">
           Advanced technology and meticulous techniques ensure precision and
           accuracy in every dental procedure.
         </p>

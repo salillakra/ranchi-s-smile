@@ -11,6 +11,7 @@ import AppointmentSection from "@/src/components/GetAnAppointment/AppointmentSec
 import BlogSection from "@/src/components/Blogs/BlogSection";
 import Newsletter from "@/src/components/NewsLetter/Newsletter";
 import { Footer } from "@/src/components/Footer/Footer";
+import NavBar from "../components/NavBar";
 
 /**
  * Renders the main page of the application.
@@ -19,12 +20,13 @@ import { Footer } from "@/src/components/Footer/Footer";
 
 const page = () => {
   return (
-    <main>
+    <>
+      <NavBar />
       <div className="bg-gradient-to-b from-primary to-secondary">
-        <div className="flex justify-between p-3 text-quaternary">
+        {/* <div className="flex justify-between p-3 text-quaternary">
           <Menu />
           <Appointment />
-        </div>
+        </div> */}
         <Hero />
         <div className="hidden place-items-center lg:grid">
           <Info />
@@ -58,7 +60,7 @@ const page = () => {
       </div>
 
       <Footer />
-    </main>
+    </>
   );
 };
 

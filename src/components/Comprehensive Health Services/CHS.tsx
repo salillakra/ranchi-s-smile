@@ -31,8 +31,8 @@ const Card = ({
   Text: string;
 }) => {
   return (
-    <div className="flex flex-col items-center space-y-4">
-      <span className="gradient-text text-center text-xl sm:text-2xl md:text-3xl">{Title}</span>
+    <div className="flex flex-col items-center underline space-y-4">
+      <span className="gradient-text text-xl sm:text-2xl md:text-3xl">{Title}</span>
       <div className="relative h-96 w-72 overflow-hidden rounded-lg">
         <Image
           width={400}

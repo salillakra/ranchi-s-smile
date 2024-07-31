@@ -31,8 +31,10 @@ const Card = ({
   Text: string;
 }) => {
   return (
-    <div className="flex flex-col items-center underline space-y-4">
-      <span className="gradient-text text-xl sm:text-2xl md:text-3xl">{Title}</span>
+    <div className="flex flex-col items-center space-y-4 underline">
+      <span className="gradient-text text-xl sm:text-2xl md:text-3xl">
+        {Title}
+      </span>
       <div className="relative h-96 w-72 overflow-hidden rounded-lg">
         <Image
           width={400}
@@ -41,7 +43,7 @@ const Card = ({
           src={ImageString}
           alt={`${Title} image`}
         />
-        <span className="absolute bottom-0 text-base z-10 w-72 bg-[rgba(0,0,0,0.2)] text-center sm:text-lg text-white">
+        <span className="absolute bottom-0 z-10 w-72 bg-[rgba(0,0,0,0.2)] text-center text-base text-white sm:text-lg">
           {Text}
         </span>
       </div>
@@ -57,7 +59,7 @@ const CHS = () => {
         ImageSource="/Comprehensive Health Services/stethoscope-svgrepo-com.svg"
         SectionText="Comprehensive Health Services"
       />
-      <div className="mt-14 grid grid-cols-1 gap-16 px-4 sm:gap-2 lg:grid-cols-3">
+      <div className="mt-14 grid grid-cols-1 place-items-center gap-4 space-y-6 px-4 sm:gap-2 md:grid-cols-2 lg:grid-cols-3">
         {Cards.map((card) => (
           <Card
             key={card.Title}

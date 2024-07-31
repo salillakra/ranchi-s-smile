@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import { Home, Info, Briefcase, DollarSign, Mail, CircleX } from "lucide-react";
 import { CSSTransition } from "react-transition-group";
 import "./NavBar.css"; // Import the CSS file for animations
@@ -10,30 +9,21 @@ const Sidebar = ({
   isSidebarOpen: boolean;
   toggleSidebar: () => void;
 }) => {
-  const [showSidebar, setShowSidebar] = useState(false);
-
-  useEffect(() => {
-    if (isSidebarOpen) {
-      setShowSidebar(true);
-    } else {
-      setShowSidebar(false);
-    }
-  }, [isSidebarOpen]);
-
   return (
-    <div className={`fixed inset-0 z-50 ${showSidebar ? "block" : "hidden"}`}>
-      <div
-        className="fixed inset-0 bg-gray-900 bg-opacity-50"
-        onClick={toggleSidebar}
-      ></div>
+    <>
+      {isSidebarOpen && (
+        <div
+          className="fixed inset-0 z-40 bg-gray-900 bg-opacity-50"
+          onClick={toggleSidebar}
+        ></div>
+      )}
       <CSSTransition
-        in={showSidebar}
+        in={isSidebarOpen}
         timeout={300}
         classNames="sidebar"
         unmountOnExit
-        onExited={() => setShowSidebar(false)}
       >
-        <div className="sidebar-transition fixed left-0 top-0 h-full w-64 bg-white shadow-lg">
+        <div className="fixed left-0 top-0 z-50 h-full w-64 bg-primary shadow-lg">
           <div className="flex items-center justify-between bg-[#0f766e] p-4 text-white">
             <h2 className="text-lg font-bold">Menu</h2>
             <button onClick={toggleSidebar} className="text-white">
@@ -74,7 +64,7 @@ const Sidebar = ({
           </nav>
         </div>
       </CSSTransition>
-    </div>
+    </>
   );
 };
 

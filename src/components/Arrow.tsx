@@ -8,7 +8,7 @@ interface ArrowProps {
 
 const Arrow = ({ ImageSource, SectionText, className }: ArrowProps) => {
   return (
-    <div className="relative mr-5 inline-block border-b-2 border-quaternary pt-10 sm:ml-5">
+    <div className="relative mr-5 inline-block border-b-2 border-quaternary pr-5 pt-8 pb-2 sm:ml-5">
       <div className={`flex items-center -space-x-2 ${className}`}>
         <Image
           className="h-10 w-10 sm:h-16 sm:w-16 md:w-24"

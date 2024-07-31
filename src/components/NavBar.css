@@ -1,0 +1,26 @@
+.sidebar-enter {
+  transform: translateX(-100%);
+  opacity: 0;
+  scale: 0.95;
+}
+.sidebar-enter-active {
+  transform: translateX(0);
+  opacity: 1;
+  scale: 1;
+  transition:
+    transform 300ms ease-in-out,
+    opacity 300ms ease-in-out;
+}
+.sidebar-exit {
+  transform: translateX(0);
+  opacity: 1;
+  scale: 1;
+}
+.sidebar-exit-active {
+  transform: translateX(-100%);
+  opacity: 0;
+  scale: 0.95;
+  transition:
+    transform 300ms ease-in-out,
+    opacity 300ms ease-in-out;
+}

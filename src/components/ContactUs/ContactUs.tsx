@@ -6,13 +6,10 @@ const ContactUs = () => {
       <div className="container mx-auto flex flex-wrap px-5 py-24 sm:flex-nowrap">
         <div className="relative flex items-end justify-start overflow-hidden rounded-lg bg-gray-300 p-10 sm:mr-10 md:w-1/2 lg:w-2/3">
           <iframe
-            width="100%"
-            height="100%"
-            className="absolute inset-0"
-            title="map"
-            scrolling="no"
-            src="https://maps.google.com/maps?width=100%&height=600&hl=en&q=%C4%B0zmir+(My%20Business%20Name)&ie=UTF8&t=&z=14&iwloc=B&output=embed"
-            style={{ filter: "grayscale(1) contrast(1.2) opacity(0.4)" }}
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26822.49102585551!2d84.55523943843993!3d23.07385724685874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398ae8e75afca273%3A0xb88a68f7f27a4112!2sDAV%20Public%20School%20Gumla!5e0!3m2!1sen!2sin!4v1722424272990!5m2!1sen!2sin"
+            width="5000"
+            height="450"
+            loading="lazy"
           ></iframe>
           <div className="relative flex flex-wrap rounded bg-white py-6 shadow-md">
             <div className="px-6 lg:w-1/2">
@@ -36,7 +33,7 @@ const ContactUs = () => {
             </div>
           </div>
         </div>
-        <div className="mt-8 flex w-full flex-col bg-white md:ml-auto md:mt-0 md:w-1/2 md:py-8 lg:w-1/3">
+        <div className="mt-8 flex w-full flex-col rounded-lg bg-white px-4 md:ml-auto md:mt-0 md:w-1/2 md:py-8 lg:w-1/3">
           <h2 className="title-font mb-1 text-lg font-medium text-gray-900">
             Contact Us
           </h2>

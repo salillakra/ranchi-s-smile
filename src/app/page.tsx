@@ -12,6 +12,7 @@ import BlogSection from "@/src/components/Blogs/BlogSection";
 import Newsletter from "@/src/components/NewsLetter/Newsletter";
 import { Footer } from "@/src/components/Footer/Footer";
 import NavBar from "../components/NavBar";
+import ContactUs from "../components/ContactUs/ContactUs";
 
 /**
  * Renders the main page of the application.
@@ -56,6 +57,7 @@ const page = () => {
         <Review />
         <AppointmentSection />
         <BlogSection />
+        <ContactUs/>
         <Newsletter />
       </div>
 

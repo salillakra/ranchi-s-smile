@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
+import AnimatedCursor from "react-animated-cursor";
 
 const font = Poppins({ weight: "400", subsets: ["latin"] });
 
@@ -20,7 +21,22 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/tooth.svg" sizes="any" />
       </head>
-      <body className={font.className}>{children}</body>
+      <body className={font.className}>
+        <AnimatedCursor
+          innerSize={8}
+          outerSize={35}
+          innerScale={1}
+          outerScale={2}
+          outerAlpha={0}
+          innerStyle={{
+            backgroundColor: "var(--cursor-color)",
+          }}
+          outerStyle={{
+            border: "2px solid var(--cursor-color)",
+          }}
+        />
+        {children}
+      </body>
     </html>
   );
 }

@@ -15,7 +15,7 @@ const Navbar = () => {
   return (
     <>
       <nav className="sticky top-0 z-20 flex h-16 items-center justify-between bg-[rgba(255,245,224,0.7)] p-0 backdrop-blur-md md:px-4 md:py-4">
-        <a className="text-3xl font-bold leading-none" href="#">
+        <Link href="/">
           <Image
             src="/ranchi's smile logo.png"
             className="w-40 md:w-52"
@@ -23,7 +23,7 @@ const Navbar = () => {
             height={200}
             width={200}
           />
-        </a>
+        </Link>
         <div className="lg:hidden">
           <button
             className="navbar-burger flex items-center p-3 text-gray-600"
@@ -37,44 +37,44 @@ const Navbar = () => {
         </div>
         <ul className="hidden lg:flex lg:w-auto lg:items-center lg:space-x-12">
           <li>
-            <a
-              className="poppins-extralight font-semibold text-[rgb(15,118,110)] hover-underline-animation"
-              href="#"
+            <Link
+              className="poppins-extralight hover-underline-animation font-semibold text-[rgb(15,118,110)]"
+              href="/"
             >
               Home
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              className="poppins-extralight font-semibold text-[rgb(15,118,110)] hover-underline-animation"
-              href="#"
+            <Link
+              className="poppins-extralight hover-underline-animation font-semibold text-[rgb(15,118,110)]"
+              href="/about"
             >
               About Us
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              className="poppins-extralight font-semibold text-[rgb(15,118,110)] hover-underline-animation"
-              href="#"
+            <Link
+              className="poppins-extralight hover-underline-animation font-semibold text-[rgb(15,118,110)]"
+              href="/services"
             >
               Services
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              className="poppins-extralight font-semibold text-[rgb(15,118,110)] hover-underline-animation"
-              href="#"
+            <Link
+              className="poppins-extralight hover-underline-animation font-semibold text-[rgb(15,118,110)]"
+              href="/pricing"
             >
               Pricing
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              className="poppins-extralight font-semibold text-[rgb(15,118,110)] hover-underline-animation"
-              href="#"
+            <Link
+              className="poppins-extralight hover-underline-animation font-semibold text-[rgb(15,118,110)]"
+              href="/contact"
             >
               Contact
-            </a>
+            </Link>
           </li>
         </ul>
         <Link

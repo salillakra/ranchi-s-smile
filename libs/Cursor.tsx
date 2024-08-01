@@ -3,12 +3,11 @@ import AnimatedCursor from "react-animated-cursor";
 
 // CSS
 import "./cursor.css";
-import { BrowserView } from "react-device-detect";
 
 const Cursor = () => {
   return (
-    <BrowserView>
-      <div aria-label="cursor">
+    <>
+      <div aria-label="cursor" className="hidden lg:block">
         <AnimatedCursor
           innerSize={8}
           outerSize={40}
@@ -36,7 +35,7 @@ const Cursor = () => {
           ]}
         />
       </div>
-    </BrowserView>
+    </>
   );
 };
 

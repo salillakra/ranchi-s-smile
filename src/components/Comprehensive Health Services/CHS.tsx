@@ -35,7 +35,7 @@ const Card = ({
       <span className="gradient-text text-xl sm:text-2xl md:text-3xl">
         {Title}
       </span>
-      <div className="relative h-96 w-72 overflow-hidden rounded-lg">
+      <div className="link relative h-96 w-72 overflow-hidden rounded-lg">
         <Image
           width={400}
           height={400}

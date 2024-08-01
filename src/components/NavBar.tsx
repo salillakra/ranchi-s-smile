@@ -65,7 +65,7 @@ const Navbar = () => {
               className="poppins-extralight hover-underline-animation font-semibold text-[rgb(15,118,110)]"
               href="/pricing"
             >
-              Pricing
+              Location
             </Link>
           </li>
           <li>

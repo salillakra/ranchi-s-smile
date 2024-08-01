@@ -27,7 +27,7 @@ const ReviewCard = ({
     <div className="mt-14 flex justify-center pb-10">
       <div className="flex flex-col items-start gap-16 px-5 sm:flex-row sm:px-20">
         <div className="relative">
-          <div className="h-80 w-80 overflow-hidden rounded-xl bg-primary">
+          <div className="link h-80 w-80 overflow-hidden rounded-xl bg-primary">
             <Image
               height={500}
               width={500}
@@ -38,7 +38,7 @@ const ReviewCard = ({
           </div>
 
           <Image
-            className="absolute bottom-0 left-0 rounded-b-lg"
+            className="absolute opacity-75 bottom-0 left-0 rounded-b-lg"
             src="/PatientReviews/wave.svg"
             height={500}
             width={500}

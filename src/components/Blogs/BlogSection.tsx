@@ -2,6 +2,7 @@ import React from "react";
 import Arrow from "../Arrow";
 import Image from "next/image";
 import { blogdata } from "./BlogData";
+import { Fade } from "react-awesome-reveal";
 
 export const Card = ({
   ImageSrc,

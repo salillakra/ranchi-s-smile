@@ -11,6 +11,7 @@ import Newsletter from "@/src/components/NewsLetter/Newsletter";
 import { Footer } from "@/src/components/Footer/Footer";
 import NavBar from "@/src/components/NavBar";
 import AnimatedCursor from "react-animated-cursor";
+import { DetectDevice } from "@/utils/DetectDevice";
 
 // CSS
 import "./cursor.css";
@@ -24,19 +25,22 @@ import OurLocation from "../components/OurLocation/OurLocation";
 const page = () => {
   return (
     <>
-      <AnimatedCursor
-        innerSize={10}
-        outerSize={38}
-        innerScale={1.5}
-        outerScale={2.5}
-        outerAlpha={0}
-        innerStyle={{
-          backgroundColor: "var(--cursor-color)",
-        }}
-        outerStyle={{
-          border: "1.5px solid var(--cursor-color)",
-        }}
-      />
+      {DetectDevice && (
+        <AnimatedCursor
+          innerSize={10}
+          outerSize={38}
+          innerScale={1.5}
+          outerScale={2.5}
+          outerAlpha={0}
+          innerStyle={{
+            backgroundColor: "var(--cursor-color)",
+          }}
+          outerStyle={{
+            border: "1.5px solid var(--cursor-color)",
+          }}
+        />
+      )}
+
       <NavBar />
       <div className="bg-gradient-to-b from-primary to-secondary">
         {/* <div className="flex justify-between p-3 text-quaternary">

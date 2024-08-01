@@ -7,6 +7,7 @@ const Aboutus = () => {
   return (
     <>
       <Arrow
+      className="space-x-2"
         ImageSource="/aboutUs.svg"
         SectionText="About Us"
       />

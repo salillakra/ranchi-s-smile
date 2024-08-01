@@ -31,7 +31,7 @@ const Card = ({
             className="rounded-full transition-all hover:border hover:border-quaternary"
             alt="doctor logo"
           />
-          <p className="poppins-medium text-lg text-black">{title}</p>
+          <p className="poppins-medium text-lg text-quaternary">{title}</p>
         </div>
         <p className="poppins-light my-2 text-center text-sm text-gray-600">
           {text}

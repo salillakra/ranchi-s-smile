@@ -18,7 +18,7 @@ export default function Loading() {
             />
           </svg>
 
-          <div>Loading ...</div>
+          <div className="text-xl md:text-3xl lg:text-5xl">Loading ...</div>
         </div>
       </div>
     </>

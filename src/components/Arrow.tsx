@@ -8,16 +8,16 @@ interface ArrowProps {
 
 const Arrow = ({ ImageSource, SectionText, className }: ArrowProps) => {
   return (
-    <div className="relative mr-5 inline-block border-b-2 border-quaternary pr-5 pt-8 pb-2 sm:ml-5">
+    <div className="relative mr-5 inline-block border-b-2 border-quaternary pb-2 pr-5 pt-8 sm:ml-5">
       <div className={`flex items-center -space-x-2 ${className}`}>
         <Image
-          className="h-10 w-10 sm:h-16 sm:w-16 md:w-24"
+          className="h-10 w-10 sm:h-16 sm:w-16 md:w-20"
           alt={SectionText}
           width={100}
           height={100}
           src={ImageSource}
         />
-        <span className="text-base text-quaternary md:text-2xl lg:text-3xl">
+        <span className="text-base text-quaternary md:text-2xl lg:text-2xl">
           {SectionText.toUpperCase()}
         </span>
       </div>

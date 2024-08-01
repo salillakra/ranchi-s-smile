@@ -1,7 +1,5 @@
-import Appointment from "@/src/components/Heading/Appointment";
 import Hero from "@/src/components/Heading/Hero";
 import Info from "@/src/components/Heading/Info";
-import Menu from "@/src/components/Heading/Menu";
 import Info_mobile from "@/src/components/Heading/Info_mobile";
 import Aboutus from "@/src/components/AboutUs/Aboutus";
 import Work from "@/src/components/WorkProcess/Work";
@@ -11,8 +9,12 @@ import AppointmentSection from "@/src/components/GetAnAppointment/AppointmentSec
 import BlogSection from "@/src/components/Blogs/BlogSection";
 import Newsletter from "@/src/components/NewsLetter/Newsletter";
 import { Footer } from "@/src/components/Footer/Footer";
-import NavBar from "../components/NavBar";
-import ContactUs from "../components/ContactUs/ContactUs";
+import NavBar from "@/src/components/NavBar";
+import AnimatedCursor from "react-animated-cursor";
+
+// CSS
+import "./cursor.css";
+import OurLocation from "../components/OurLocation/OurLocation";
 
 /**
  * Renders the main page of the application.
@@ -22,6 +24,19 @@ import ContactUs from "../components/ContactUs/ContactUs";
 const page = () => {
   return (
     <>
+      <AnimatedCursor
+        innerSize={10}
+        outerSize={38}
+        innerScale={1.5}
+        outerScale={2.5}
+        outerAlpha={0}
+        innerStyle={{
+          backgroundColor: "var(--cursor-color)",
+        }}
+        outerStyle={{
+          border: "1.5px solid var(--cursor-color)",
+        }}
+      />
       <NavBar />
       <div className="bg-gradient-to-b from-primary to-secondary">
         {/* <div className="flex justify-between p-3 text-quaternary">
@@ -57,7 +72,7 @@ const page = () => {
         <Review />
         <AppointmentSection />
         <BlogSection />
-        <ContactUs/>
+        <OurLocation />
         <Newsletter />
       </div>
 

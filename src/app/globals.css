@@ -4,14 +4,6 @@
 
 /* Custom CSS */
 
-html {
-  --cursor-color: #333;
-}
-
-html.dark-mode {
-  --cursor-color: #fff;
-}
-
 body,
 html {
   @apply bg-primary;

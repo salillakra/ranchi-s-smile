@@ -79,10 +79,10 @@ const Navbar = () => {
         </ul>
         <Link
           href="/login"
-          className="hidden items-center gap-2 rounded-md bg-[#0f766e] px-4 py-2 text-sm font-bold text-white transition duration-200 lg:flex"
+          className="hidden hover:bg-slate-700 items-center gap-2 rounded-md bg-[#0f766e] px-4 py-2 text-sm font-bold text-white transition duration-200 lg:flex"
         >
           <span className="poppins-medium">Sign in</span>
-          <LogIn />
+          <LogIn className="" />
         </Link>
       </nav>
       <SideBarMobile

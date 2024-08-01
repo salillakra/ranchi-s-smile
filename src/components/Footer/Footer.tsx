@@ -1,34 +1,27 @@
+import Image from "next/image";
+import Link from "next/link";
+
 export const Footer = () => {
+  const CurrentYear = new Date().getFullYear().toString();
   return (
     <footer className="mx-auto px-4 pt-16 sm:max-w-xl md:max-w-full md:px-24 lg:max-w-screen-xl lg:px-8">
       <div className="row-gap-6 mb-8 grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
         <div className="sm:col-span-2">
-          <a
-            href="/"
+          <Link
             aria-label="Go home"
-            title="Company"
+            title="Ranchi's smile"
+            href="/"
             className="inline-flex items-center"
           >
-            <svg
-              className="text-deep-purple-accent-400 w-8"
-              viewBox="0 0 24 24"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeMiterlimit="10"
-              stroke="currentColor"
-              fill="none"
-            >
-              <rect x="3" y="1" width="7" height="12" />
-              <rect x="3" y="17" width="7" height="6" />
-              <rect x="14" y="1" width="7" height="6" />
-              <rect x="14" y="11" width="7" height="12" />
-            </svg>
-            <span className="ml-2 text-xl font-bold uppercase tracking-wide text-gray-800">
-              Company
-            </span>
-          </a>
-          <div className="mt-6 lg:max-w-sm">
+            <Image
+              src="/ranchi's smile logo.png"
+              className="w-40 -translate-y-9 scale-125 md:w-64"
+              alt="Ranchi's Smile logo"
+              height={200}
+              width={200}
+            />
+          </Link>
+          <div className="lg:max-w-sm">
             <p className="text-sm text-gray-800">
               Sed ut perspiciatis unde omnis iste natus error sit voluptatem
               accusantium doloremque laudantium, totam rem aperiam.
@@ -57,12 +50,12 @@ export const Footer = () => {
           <div className="flex">
             <p className="mr-1 text-gray-800">Email:</p>
             <a
-              href="mailto:info@lorem.mail"
+              href="mailto:contactus@ranchismile.com"
               aria-label="Our email"
               title="Our email"
               className="text-deep-purple-accent-400 hover:text-deep-purple-800 transition-colors duration-300"
             >
-              info@lorem.mail
+              contactus@ranchismile.com
             </a>
           </div>
           <div className="flex">
@@ -118,7 +111,8 @@ export const Footer = () => {
       </div>
       <div className="flex flex-col-reverse justify-between border-t pb-10 pt-5 lg:flex-row">
         <p className="text-sm text-gray-600">
-          © Copyright 2020 Lorem Inc. All rights reserved.
+          © Copyright {CurrentYear} Ranchi&rsquo;s Smile pvt. limited. All
+          rights reserved.
         </p>
         <ul className="mb-3 flex flex-col space-y-2 sm:flex-row sm:space-x-5 sm:space-y-0 lg:mb-0">
           <li>

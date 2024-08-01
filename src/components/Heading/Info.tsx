@@ -39,7 +39,7 @@ const InfoCard = (props: { image: any; title: string; text: string }) => {
           />
         </div>
 
-        <p className="poppins-medium text-lg text-black">{props.title}</p>
+        <p className="poppins-medium text-lg text-quaternary">{props.title}</p>
       </div>
       <p className="poppins-light my-2 text-center text-sm text-gray-600">
         {props.text}

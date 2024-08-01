@@ -21,7 +21,7 @@ const Navbar = () => {
             className="w-40 md:w-52"
             alt="Ranchi's Smile logo"
             height={200}
-            width={200}
+            width={300}
           />
         </Link>
         <div className="lg:hidden">
@@ -79,7 +79,7 @@ const Navbar = () => {
         </ul>
         <Link
           href="/login"
-          className="hidden hover:bg-slate-700 items-center gap-2 rounded-md bg-[#0f766e] px-4 py-2 text-sm font-bold text-white transition duration-200 lg:flex"
+          className="hidden items-center gap-2 rounded-md bg-[#0f766e] px-4 py-2 text-sm font-bold text-white transition duration-200 hover:bg-slate-700 lg:flex"
         >
           <span className="poppins-medium">Sign in</span>
           <LogIn className="" />

@@ -31,14 +31,15 @@ const Card = ({
   Text: string;
 }) => {
   return (
-    <div className="flex flex-col items-center space-y-4 underline">
-      <span className="gradient-text text-xl sm:text-2xl md:text-3xl">
+    <div className="flex flex-col items-center space-y-4">
+      <span className="gradient-text link relative block w-fit text-xl after:absolute after:block after:h-[3px] after:w-full after:origin-center after:scale-x-0 after:bg-black after:transition after:duration-300 after:content-[''] after:hover:scale-x-100 sm:text-2xl">
         {Title}
       </span>
       <div className="link relative h-96 w-72 overflow-hidden rounded-lg">
         <Image
           width={400}
           height={400}
+          priority={true}
           className="aspect-[3/5] transform object-cover grayscale transition duration-500 ease-in-out hover:scale-110 hover:grayscale-0"
           src={ImageString}
           alt={`${Title} image`}

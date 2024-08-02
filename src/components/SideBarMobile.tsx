@@ -24,7 +24,7 @@ const Sidebar = ({
         classNames="sidebar"
         unmountOnExit
       >
-        <div className="fixed left-0 top-0 z-50 h-full w-64 bg-primary shadow-lg">
+        <div className="fixed left-0 top-0 z-50 max-h-[100lvh] h-full w-64 bg-primary shadow-lg">
           <div className="flex items-center justify-between bg-[#0f766e] p-4 text-white">
             <h2 className="text-lg font-bold">Menu</h2>
             <button onClick={toggleSidebar} className="text-white">

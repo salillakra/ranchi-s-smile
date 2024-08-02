@@ -20,7 +20,7 @@ const ContactUs = () => {
               You can also email us at
               <a
                 href="mailto:contactus@ranchismile.com"
-                className="ml-2 border-b-4 border-green-400 poppins-medium-italic text-primary"
+                className="poppins-medium-italic ml-2 border-b-4 border-green-400 text-primary"
               >
                 contactus@ranchismile.com
               </a>
@@ -36,9 +36,9 @@ const ContactUs = () => {
               >
                 <svg
                   fill="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                   className="h-6 w-6"
                   viewBox="0 0 24 24"
                 >
@@ -53,9 +53,9 @@ const ContactUs = () => {
                 <svg
                   fill="none"
                   stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                   className="h-6 w-6"
                   viewBox="0 0 24 24"
                 >

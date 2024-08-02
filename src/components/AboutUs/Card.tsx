@@ -27,13 +27,13 @@ const Card = () => {
   ];
   return (
     <>
-      <div className="hidden -translate-y-16 gap-10 lg:mx-28 lg:grid lg:w-1/2 lg:grid-cols-2">
+      <div className="hidden -translate-y-16 gap-10 lg:mx-28 lg:grid lg:max-w-[60%] lg:grid-cols-2">
         {/* Cards */}
         {Card_Data.map((card) => {
           return (
             <div
               key={card.id}
-              className="relative shadow-md shadow-black grid h-40 w-80 place-items-center rounded-lg bg-pentenary p-2"
+              className="relative grid h-40 w-[90%] place-items-center rounded-lg bg-pentenary p-2 shadow-md shadow-black"
             >
               <p className="text-center text-sm text-quaternary">{card.text}</p>
               <div className="absolute -top-7 z-10 rounded-full bg-primary p-2">

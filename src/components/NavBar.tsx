@@ -39,7 +39,7 @@ const Navbar = () => {
           <li>
             <Link
               className="poppins-extralight hover-underline-animation font-semibold text-[rgb(15,118,110)]"
-              href="/"
+              href="#home"
             >
               Home
             </Link>
@@ -47,7 +47,7 @@ const Navbar = () => {
           <li>
             <Link
               className="poppins-extralight hover-underline-animation font-semibold text-[rgb(15,118,110)]"
-              href="/about"
+              href="#aboutus"
             >
               About Us
             </Link>
@@ -55,15 +55,15 @@ const Navbar = () => {
           <li>
             <Link
               className="poppins-extralight hover-underline-animation font-semibold text-[rgb(15,118,110)]"
-              href="/services"
+              href="#work"
             >
-              Services
+              Work
             </Link>
           </li>
           <li>
             <Link
               className="poppins-extralight hover-underline-animation font-semibold text-[rgb(15,118,110)]"
-              href="/pricing"
+              href="#location"
             >
               Location
             </Link>
@@ -71,7 +71,7 @@ const Navbar = () => {
           <li>
             <Link
               className="poppins-extralight hover-underline-animation font-semibold text-[rgb(15,118,110)]"
-              href="/contact"
+              href="#contact"
             >
               Contact
             </Link>

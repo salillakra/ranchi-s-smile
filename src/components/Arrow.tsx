@@ -4,11 +4,15 @@ interface ArrowProps {
   ImageSource: string;
   SectionText: string;
   className?: string;
+  id?: string;
 }
 
-const Arrow = ({ ImageSource, SectionText, className }: ArrowProps) => {
+const Arrow = ({ ImageSource, SectionText, className, id }: ArrowProps) => {
   return (
-    <div className="relative mr-5 inline-block border-b-2 border-quaternary pb-2 pr-5 pt-8 sm:ml-5">
+    <div
+      id={id}
+      className="relative mr-5 inline-block border-b-2 border-quaternary pb-2 pr-5 pt-8 sm:ml-5"
+    >
       <div className={`flex items-center -space-x-2 ${className}`}>
         <Image
           className="h-10 w-10 sm:h-16 sm:w-16 md:w-20"

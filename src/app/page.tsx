@@ -23,7 +23,7 @@ const page = () => {
   return (
     <>
       <NavBar />
-      <div className="bg-gradient-to-b from-primary to-secondary">
+      <div id="home" className="bg-gradient-to-b from-primary to-secondary">
         <Hero />
         <div className="hidden place-items-center lg:grid">
           <Info />

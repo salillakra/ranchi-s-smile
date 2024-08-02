@@ -5,6 +5,7 @@ const OurLocation = () => {
   return (
     <section className="bg-tranparent">
       <Arrow
+        id="location"
         className="space-x-2"
         ImageSource="/SVG/map-pinned.svg"
         SectionText="Visit our location"

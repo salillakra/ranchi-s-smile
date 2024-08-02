@@ -63,6 +63,7 @@ const Work = () => {
   return (
     <>
       <Arrow
+        id="work"
         ImageSource="/WorkProcess/injection-vaccine-medical-health-doctor-medicine-svgrepo-com.svg"
         SectionText="OUR WORK PROCESS"
       />

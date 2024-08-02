@@ -24,7 +24,7 @@ const Sidebar = ({
         classNames="sidebar"
         unmountOnExit
       >
-        <div className="fixed left-0 top-0 z-50 max-h-[100lvh] h-full w-64 bg-primary shadow-lg">
+        <div className="fixed left-0 top-0 z-50 h-full max-h-[100lvh] w-64 bg-primary shadow-lg">
           <div className="flex items-center justify-between bg-[#0f766e] p-4 text-white">
             <h2 className="text-lg font-bold">Menu</h2>
             <button onClick={toggleSidebar} className="text-white">
@@ -36,7 +36,8 @@ const Sidebar = ({
               <li>
                 <Link
                   className="flex cursor-pointer items-center justify-start p-4 hover:bg-gray-200"
-                  href="/"
+                  onClick={toggleSidebar}
+                  href="#home"
                 >
                   <Home className="mr-3" />
                   Home
@@ -45,7 +46,8 @@ const Sidebar = ({
               <li>
                 <Link
                   className="flex cursor-pointer items-center justify-start p-4 hover:bg-gray-200"
-                  href="/about"
+                  onClick={toggleSidebar}
+                  href="#aboutus"
                 >
                   <Info className="mr-3" />
                   About Us
@@ -54,16 +56,18 @@ const Sidebar = ({
               <li>
                 <Link
                   className="flex cursor-pointer items-center justify-start p-4 hover:bg-gray-200"
-                  href="/services"
+                  onClick={toggleSidebar}
+                  href="#work"
                 >
                   <Briefcase className="mr-3" />
-                  Services
+                  Work
                 </Link>
               </li>
               <li>
                 <Link
                   className="flex cursor-pointer items-center justify-start p-4 hover:bg-gray-200"
-                  href="/location"
+                  onClick={toggleSidebar}
+                  href="#location"
                 >
                   <MapPin className="mr-3" />
                   Location
@@ -72,7 +76,8 @@ const Sidebar = ({
               <li>
                 <Link
                   className="flex cursor-pointer items-center justify-start p-4 hover:bg-gray-200"
-                  href="/contact"
+                  onClick={toggleSidebar}
+                  href="#contact"
                 >
                   <Mail className="mr-3" />
                   Contact

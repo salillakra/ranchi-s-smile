@@ -4,7 +4,7 @@ const newsletter = () => {
   return (
     <>
       <aside
-        className="my-8 border border-gray-200 bg-tertiary p-4 shadow-md sm:p-6 lg:p-8"
+        className="my-8 border-gray-200 bg-tertiary p-4 sm:p-6 lg:p-8"
         aria-label="Subscribe to the our newsletter"
       >
         <h3 className="mb-3 text-xl font-medium text-gray-900">
@@ -56,7 +56,7 @@ const newsletter = () => {
                 />
               </div>
               <button>
-                <span className="cursor-pointer rounded-lg bg-primary px-5 py-3 text-center text-sm font-medium text-quaternary hover:bg-green-800 focus:ring-4 focus:ring-green-300">
+                <span className="rounded-lg bg-primary px-5 py-3 text-center text-sm font-medium text-quaternary hover:bg-green-800 focus:ring-4 focus:ring-green-300">
                   Subscribe
                 </span>
               </button>

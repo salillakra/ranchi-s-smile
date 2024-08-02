@@ -1,9 +1,10 @@
+import { Mail } from "lucide-react";
 import React from "react";
 
 const ContactUs = () => {
   return (
     <>
-      <section className="body-font text-gray-600">
+      <section id="contact" className="body-font text-gray-600">
         <div
           className="section container mx-auto flex w-full flex-col px-5 py-12 md:flex-row md:py-24 lg:max-w-5xl"
           id="contact-form"
@@ -83,6 +84,7 @@ const ContactUs = () => {
                     Your Name
                   </label>
                   <input
+                    placeholder="Jhetalal Gada"
                     type="text"
                     id="name"
                     name="name"
@@ -100,6 +102,7 @@ const ContactUs = () => {
                     Your Email
                   </label>
                   <input
+                    placeholder="jetha@gadaelectronics.com"
                     type="email"
                     id="email"
                     name="email"
@@ -117,6 +120,7 @@ const ContactUs = () => {
                     Your Message
                   </label>
                   <textarea
+                    placeholder="Your message here..."
                     id="message"
                     name="message"
                     required
@@ -127,9 +131,9 @@ const ContactUs = () => {
               <div className="w-full p-2">
                 <button
                   type="submit"
-                  className="g-recaptcha mx-0 flex flex-col rounded border-0 bg-gray-900 px-6 py-4 text-center text-xl font-bold text-white shadow-lg hover:bg-blue-900 focus:outline-none"
+                  className="g-recaptcha mx-0 flex items-center gap-2 rounded border-0 bg-gray-900 px-6 py-4 text-center text-lg poppins-medium text-white shadow-lg hover:bg-blue-900 focus:outline-none"
                 >
-                  Send Message ✉
+                  Send Message <Mail strokeWidth={1} />
                 </button>
               </div>
             </form>

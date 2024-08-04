@@ -67,7 +67,7 @@ const newsletter = () => {
           By subscribing, you agree with Ranchi&apos;s smile{" "}
           <a
             rel="nofollow"
-            href="#"
+            href="/termsofuse"
             className="text-blue-600 hover:underline dark:text-blue-500"
           >
             Terms of Service
@@ -76,7 +76,7 @@ const newsletter = () => {
           <a
             rel="nofollow"
             className="text-blue-600 hover:underline dark:text-blue-500"
-            href="#"
+            href="/privacypolicy"
           >
             Privacy Policy
           </a>

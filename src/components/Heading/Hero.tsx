@@ -5,13 +5,13 @@ import AppointmentButton from "./AppointmentButton";
 const Text = () => {
   return (
     <div className="space-y-4 p-2 py-8 md:space-y-8 md:pl-10">
-      <h1 className="md:text-md text-xs underline sm:text-sm lg:text-lg">
+      <p className="md:text-md text-sm underline sm:text-sm lg:text-lg">
         Your Smile, Our Passion
-      </h1>
-      <p className="w-full text-lg tracking-tighter sm:w-80 md:w-auto md:text-4xl lg:text-6xl">
+      </p>
+      <h2 className="w-full text-2xl tracking-tighter sm:w-80 md:w-auto md:text-4xl lg:text-6xl">
         Expert dental care for all ages. Book your appointment now for a
         healthy, confident smile!
-      </p>
+      </h2>
       <AppointmentButton />
     </div>
   );
@@ -19,7 +19,7 @@ const Text = () => {
 
 const Hero = () => {
   return (
-    <div className="flex flex-col-reverse items-center justify-between text-quaternary sm:flex-row">
+    <div className="container flex flex-col-reverse items-center justify-between text-quaternary sm:flex-row">
       <Text />
       <Image
         priority={true}
@@ -29,6 +29,9 @@ const Hero = () => {
         width={400}
         height={400}
       />
+      <h1 className="poppins-medium animate-text my-3 mt-4 bg-gradient-to-r from-teal-600 via-purple-600 to-quaternary bg-clip-text text-center text-2xl text-quaternary text-transparent sm:hidden">
+        Discover Your Perfect Smile at Ranchi&rsquo;s Top Dental Clinic
+      </h1>
     </div>
   );
 };

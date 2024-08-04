@@ -14,18 +14,18 @@ const Aboutus = () => {
       />
       {/* aboutus hero section */}
 
-      <div className="flex items-center justify-between px-2 lg:px-10">
+      <div className="flex items-center justify-between px-2 md:-translate-y-8 lg:px-10">
         <section className="mt-10 sm:mt-0 md:p-8">
-          <h1 className="text-2xl text-quaternary lg:text-5xl">
+          <h3 className="text-5xl text-quaternary">
             Welcome To{" "}
             <span className="poppins-regular tracking-tighter text-primary">
               Ranchi&apos;s Smile
             </span>
-          </h1>
-          <p className="text-md my-8 text-primary lg:text-2xl">
+          </h3>
+          <p className="my-8 text-lg text-primary lg:text-2xl">
             Comprehensive Dental Care for the Whole Family
           </p>
-          <article className="sm:text-md text-sm lg:w-[30rem] lg:text-lg">
+          <article className="poppins-thin tracking-thin text-md lg:w-[30rem] lg:text-lg">
             Experience top-notch dental services in a friendly and comfortable
             environment. From routine check-ups to advanced treatments, we’re
             here to keep your smile bright and healthy. Book your appointment

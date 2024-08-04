@@ -16,6 +16,7 @@ const OurLocation = () => {
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
             <div className="h-full w-full rounded-md bg-gray-600">
               <iframe
+                title="google map location"
                 className="w-full rounded-md"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3650.188464163369!2d86.43893562557604!3d23.811896428628557!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f6bc9fac678481%3A0x122cb1d133a89995!2sIndian%20Institute%20of%20Technology%20(Indian%20School%20of%20Mines)%2C%20Dhanbad!5e0!3m2!1sen!2sin!4v1722491075541!5m2!1sen!2sin"
                 width="595"

@@ -1,6 +1,6 @@
 import { Home, Info, Briefcase, Mail, CircleX, MapPin } from "lucide-react";
 import { CSSTransition } from "react-transition-group";
-import "./NavBar.css"; // Import the CSS file for animations
+import "@/styles/SideBarStyle.css"; // Import the CSS file for animations
 import Link from "next/link";
 
 const Sidebar = ({
@@ -13,10 +13,12 @@ const Sidebar = ({
   return (
     <>
       {isSidebarOpen && (
-        <div
+        <button
           className="fixed inset-0 z-40 bg-gray-900 bg-opacity-50"
           onClick={toggleSidebar}
-        ></div>
+          onKeyDown={toggleSidebar}
+          tabIndex={0}
+        ></button>
       )}
       <CSSTransition
         in={isSidebarOpen}

@@ -28,7 +28,7 @@ export const Card = ({
         <p className="text-base text-gray-700">{Description}</p>
       </div>
       <a
-        href="#"
+        href="under-maintance"
         className="mx-5 block text-right text-quaternary transition-all hover:text-gray-400"
       >
         Read more...

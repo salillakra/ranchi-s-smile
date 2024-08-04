@@ -11,6 +11,21 @@ const config: Config = {
       transitionDuration: {
         2000: "2000ms",
       },
+      animation: {
+        text: "text 5s ease-in-out infinite",
+      },
+      keyframes: {
+        text: {
+          "0%, 100%": {
+            "background-size": "200% 200%",
+            "background-position": "left center",
+          },
+          "50%": {
+            "background-size": "200% 200%",
+            "background-position": "right center",
+          },
+        },
+      },
       colors: {
         primary: "#FFF5E0",
         secondary: "#8DECB4",

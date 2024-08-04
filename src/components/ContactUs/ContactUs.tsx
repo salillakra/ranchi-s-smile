@@ -84,7 +84,7 @@ const ContactUs = () => {
                     Your Name
                   </label>
                   <input
-                    placeholder="Jhetalal Gada"
+                    placeholder="Jetalal Champaklal Gada"
                     type="text"
                     id="name"
                     name="name"
@@ -131,7 +131,7 @@ const ContactUs = () => {
               <div className="w-full p-2">
                 <button
                   type="submit"
-                  className="g-recaptcha mx-0 flex items-center gap-2 rounded border-0 bg-gray-900 px-6 py-4 text-center text-lg poppins-medium text-white shadow-lg hover:bg-blue-900 focus:outline-none"
+                  className="g-recaptcha poppins-medium mx-0 flex items-center gap-2 rounded border-0 bg-gray-900 px-6 py-4 text-center text-lg text-white shadow-lg hover:bg-blue-900 focus:outline-none"
                 >
                   Send Message <Mail strokeWidth={1} />
                 </button>

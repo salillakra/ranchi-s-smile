@@ -23,7 +23,7 @@ const BlogMobile = () => {
         className="mySwiper mt-10"
       >
         {blogdata.map((blog, index) => (
-          <SwiperSlide className="pl-3">
+          <SwiperSlide key={index} className="pl-3">
             <Card
               key={index}
               ImageSrc={blog.image}

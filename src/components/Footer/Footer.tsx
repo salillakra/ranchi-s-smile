@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export const Footer = () => {
+export default function Footer() {
   const CurrentYear = new Date().getFullYear().toString();
   return (
     <footer className="mx-auto px-4 pt-16 sm:max-w-xl md:max-w-full md:px-24 lg:max-w-screen-xl lg:px-8">
@@ -87,7 +87,7 @@ export const Footer = () => {
             </a>
             <a
               href="/"
-              className="hover:text-gray-900 text-gray-500 transition-colors duration-300"
+              className="text-gray-500 transition-colors duration-300 hover:text-gray-900"
             >
               <svg viewBox="0 0 30 30" fill="currentColor" className="h-6">
                 <circle cx="15" cy="15" r="4" />
@@ -96,16 +96,14 @@ export const Footer = () => {
             </a>
             <a
               href="/"
-              className="hover:text-gray-900 text-gray-500 transition-colors duration-300"
+              className="text-gray-500 transition-colors duration-300 hover:text-gray-900"
             >
               <svg viewBox="0 0 24 24" fill="currentColor" className="h-5">
                 <path d="M22,0H2C0.895,0,0,0.895,0,2v20c0,1.105,0.895,2,2,2h11v-9h-3v-4h3V8.413c0-3.1,1.893-4.788,4.659-4.788 c1.325,0,2.463,0.099,2.795,0.143v3.24l-1.918,0.001c-1.504,0-1.795,0.715-1.795,1.763V11h4.44l-1,4h-3.44v9H22c1.105,0,2-0.895,2-2 V2C24,0.895,23.105,0,22,0z" />
               </svg>
             </a>
           </div>
-          <p className="mt-4 text-sm text-gray-500">
-            
-          </p>
+          <p className="mt-4 text-sm text-gray-500"></p>
         </div>
       </div>
       <div className="flex flex-col-reverse justify-between border-t pb-10 pt-5 lg:flex-row">
@@ -142,4 +140,4 @@ export const Footer = () => {
       </div>
     </footer>
   );
-};
+}

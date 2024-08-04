@@ -38,7 +38,7 @@ const ReviewCard = ({
           </div>
 
           <Image
-            className="absolute opacity-75 bottom-0 left-0 rounded-b-lg"
+            className="absolute bottom-0 left-0 rounded-b-lg opacity-75"
             src="/PatientReviews/wave.svg"
             height={500}
             width={500}

@@ -66,5 +66,5 @@ This repository is private and is exclusively managed by Ranchi's Smile Pvt. Lim
 
 &copy; 2024 Ranchi's Smile Pvt. Limited. All rights reserved.
 
-For more information, visit [Ranchi's Smile](http://project-smile.vercel.app).
+For more information, visit [Ranchi's Smile](http://ranchissmile.vercel.app).
 

@@ -28,11 +28,13 @@ Ranchi's Smile provides comprehensive dental care with state-of-the-art technolo
 To get a local copy up and running, follow these steps:
 
 1. **Clone the repo**
+
    ```sh
    git clone https://github.com/salillakra/project-smile.git
    ```
 
 2. **Install NPM packages**
+
    ```sh
    npm install
    ```
@@ -67,4 +69,3 @@ This repository is private and is exclusively managed by Ranchi's Smile Pvt. Lim
 &copy; 2024 Ranchi's Smile Pvt. Limited. All rights reserved.
 
 For more information, visit [Ranchi's Smile](http://ranchissmile.vercel.app).
-

@@ -10,7 +10,7 @@ import BlogSection from "@/src/components/Blogs/BlogSection";
 import Newsletter from "@/src/components/NewsLetter/Newsletter";
 import Footer from "@/src/components/Footer/Footer";
 import NavBar from "@/src/components/NavBar";
-import Cursor from "@/cursor/Cursor";
+import Cursor from "@/src/cursor/Cursor";
 import OurLocation from "@/src/components/OurLocation/OurLocation";
 import ContactUs from "@/src/components/ContactUs/ContactUs";
 

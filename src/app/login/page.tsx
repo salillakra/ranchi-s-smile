@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export const Facebook = () => (
+const Facebook = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     className="h-8 w-8"
@@ -19,8 +19,7 @@ export const Facebook = () => (
     ></path>
   </svg>
 );
-
-export const Google = () => (
+const Google = () => (
   <svg
     className="h-8 w-8"
     xmlns="http://www.w3.org/2000/svg"
@@ -47,7 +46,7 @@ export const Google = () => (
   </svg>
 );
 
-export const Apple = () => (
+const Apple = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     className="h-8 w-8"

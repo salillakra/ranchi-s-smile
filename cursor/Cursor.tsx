@@ -4,12 +4,9 @@ import AnimatedCursor from "react-animated-cursor";
 
 // CSS
 import "./cursor.css";
-import { getDetailedClientInfo } from "@/utils/Clientinfo.js";
 
 const Cursor = () => {
   const [isDesktopDevice, setIsDesktopDevice] = useState(false);
-
-  getDetailedClientInfo().then((info) => console.log(info));
 
   function isDesktop() {
     // Check screen size

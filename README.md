@@ -30,7 +30,7 @@ To get a local copy up and running, follow these steps:
 1. **Clone the repo**
 
    ```sh
-   git clone https://github.com/salillakra/project-smile.git
+   git clone https://github.com/salillakra/ranchi-s-smile.git
    ```
 
 2. **Install NPM packages**

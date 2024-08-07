@@ -28,7 +28,8 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "src/components/Blogs/BlogData.ts",
-    "utils/Clientinfo.js"
+    "utils/Clientinfo.js",
+    "utils/firebase.ts"
   ],
   "exclude": ["node_modules"]
 }

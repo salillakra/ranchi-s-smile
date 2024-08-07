@@ -15,7 +15,7 @@ const Aboutus = () => {
       {/* aboutus hero section */}
 
       <div className="flex items-center justify-between px-2 md:-translate-y-8 lg:px-10">
-        <section className="mt-10 sm:mt-0 md:p-8">
+        <section className="mt-10 sm:p-8">
           <h3 className="text-5xl text-quaternary">
             Welcome To{" "}
             <span className="poppins-regular tracking-tighter text-primary">

@@ -1,24 +1,21 @@
-"use client";
-
+import { signIn } from "@/src/auth";
 import Image from "next/image";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
 
 // Social Media Icons
-const FacebookIcon = () => (
+const MicrosoftIcon = () => (
   <svg
-    xmlns="http://www.w3.org/2000/svg"
     className="h-8 w-8"
-    viewBox="0 0 256 256"
+    xmlns="http://www.w3.org/2000/svg"
+    aria-label="Microsoft"
+    role="img"
+    viewBox="0 0 512 512"
   >
-    <path
-      fill="#1877F2"
-      d="M256 128C256 57.308 198.692 0 128 0C57.308 0 0 57.307 0 128c0 63.888 46.808 116.843 108 126.445V165H75.5v-37H108V99.8c0-32.08 19.11-49.8 48.347-49.8C170.352 50 185 52.5 185 52.5V84h-16.14C152.958 84 148 93.867 148 103.99V128h35.5l-5.675 37H148v89.445c61.192-9.602 108-62.556 108-126.445"
-    ></path>
-    <path
-      fill="#FFF"
-      d="m177.825 165l5.675-37H148v-24.01C148 93.866 152.959 84 168.86 84H185V52.5S170.352 50 156.347 50C127.11 50 108 67.72 108 99.8V128H75.5v37H108v89.445A128.959 128.959 0 0 0 128 256a128.9 128.9 0 0 0 20-1.555V165h29.825"
-    ></path>
+    <rect width="512" height="512" rx="15%" fill="#ffffff" />
+    <path d="M75 75v171h171v-171z" fill="#f25022" />
+    <path d="M266 75v171h171v-171z" fill="#7fba00" />
+    <path d="M75 266v171h171v-171z" fill="#00a4ef" />
+    <path d="M266 266v171h171v-171z" fill="#ffb900" />
   </svg>
 );
 
@@ -62,32 +59,34 @@ const AppleIcon = () => (
 
 // Login Component
 const LoginComponent = () => {
-  const router = useRouter();
-
-  const signInWithGoogle = async () => {
-    try {
-      // Implement sign-in logic here
-    } catch (error) {
-      console.error("Sign-in error:", error);
-    }
-  };
-
   return (
     <div className="space-y-4">
-      <button
-        onClick={signInWithGoogle}
-        className="flex w-full cursor-pointer items-center gap-3 rounded-lg bg-white px-4 py-2 text-black transition-all hover:bg-slate-200"
+      {/* google */}
+      <form
+        action={async () => {
+          "use server";
+          await signIn("google", {
+            redirect: true,
+            redirectTo: "/dashboard/user",
+          });
+        }}
       >
-        <GoogleIcon />
-        <span className="text-xl">Sign in with Google</span>
-      </button>
+        <button className="flex w-full cursor-pointer items-center gap-3 rounded-lg bg-white px-4 py-2 text-black transition-all hover:bg-slate-200">
+          <GoogleIcon />
+          <span className="text-xl">Sign in with Google</span>
+        </button>
+      </form>
+
+      {/* apple */}
       <button className="flex w-full cursor-pointer items-center gap-3 rounded-lg bg-quaternary px-4 py-2 text-white transition-all hover:bg-slate-600">
         <AppleIcon />
         <span className="text-xl">Sign in with Apple</span>
       </button>
+
+      {/* facebook */}
       <button className="flex w-full cursor-pointer items-center gap-3 rounded-lg bg-blue-500 px-4 py-2 text-white transition-all hover:bg-blue-600">
-        <FacebookIcon />
-        <span className="text-xl">Sign in with Facebook</span>
+        <MicrosoftIcon />
+        <span className="text-xl">Sign in with Microsoft</span>
       </button>
     </div>
   );

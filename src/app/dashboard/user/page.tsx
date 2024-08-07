@@ -1,16 +1,13 @@
-"use client";
-
 import Image from "next/image";
 import React, { useState } from "react";
-import { useRouter } from "next/navigation";
+import { signOut } from "@/src/auth";
 
 const Page = () => {
-  const router = useRouter();
-  const [userName, setUserName] = useState<string | null>(null);
-  const [userEmail, setUserEmail] = useState<string | null>(null);
-  const [userPhoto, setUserPhoto] = useState<string | null>(null);
+  // const [userName, setUserName] = useState<string | null>(null);
+  // const [userEmail, setUserEmail] = useState<string | null>(null);
+  // const [userPhoto, setUserPhoto] = useState<string | null>(null);
 
-  const handleSignOut = async () => {};
+  // const session = await getServerSession();
 
   return (
     <div>
@@ -20,18 +17,25 @@ const Page = () => {
         <Image
           height={128}
           width={128}
-          src={userPhoto || ""}
+          src={""}
           alt="Profile"
           className="mb-4 h-32 w-32 rounded-full border-2 border-gray-300"
         />
-        <h2 className="mb-2 text-xl font-semibold text-blue-800">{userName}</h2>
-        <p className="mb-4 text-gray-700">{userEmail}</p>
-        <button
-          onClick={handleSignOut}
-          className="rounded-lg bg-blue-500 px-4 py-2 text-white transition hover:bg-blue-600"
+        <h2 className="mb-2 text-xl font-semibold text-blue-800">{}</h2>
+        <p className="mb-4 text-gray-700">{}</p>
+        <form
+          action={async () => {
+            "use server";
+            await signOut({
+              redirect: true,
+              redirectTo: "/",
+            });
+          }}
         >
-          Sign Out
-        </button>
+          <button className="rounded-lg bg-blue-500 px-4 py-2 text-white transition hover:bg-blue-600">
+            Sign Out
+          </button>
+        </form>
       </div>
     </div>
   );

@@ -78,7 +78,7 @@ const Navbar = () => {
           </li>
         </ul>
         <Link
-          href="/login"
+          href="/signin"
           className="hidden items-center gap-2 rounded-md bg-[#0f766e] px-4 py-2 text-sm font-bold text-white transition duration-200 hover:bg-slate-700 lg:flex"
         >
           <span className="poppins-medium">Sign in</span>

@@ -1,4 +1,3 @@
-import { signIn } from "@/src/auth";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -79,20 +78,11 @@ const LoginComponent = () => {
   return (
     <div className="space-y-4">
       {/* google */}
-      <form
-        action={async () => {
-          "use server";
-          await signIn("google", {
-            redirect: true,
-            redirectTo: "/dashboard/user",
-          });
-        }}
-      >
-        <button className="flex w-full cursor-pointer items-center gap-3 rounded-lg bg-white px-4 py-2 text-black transition-all hover:bg-slate-200">
-          <GoogleIcon />
-          <span className="text-xl">Sign in with Google</span>
-        </button>
-      </form>
+
+      <button className="flex w-full cursor-pointer items-center gap-3 rounded-lg bg-white px-4 py-2 text-black transition-all hover:bg-slate-200">
+        <GoogleIcon />
+        <span className="text-xl">Sign in with Google</span>
+      </button>
 
       {/* apple */}
       <button className="flex w-full cursor-pointer items-center gap-3 rounded-lg bg-quaternary px-4 py-2 text-white transition-all hover:bg-slate-600">

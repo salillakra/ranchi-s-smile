@@ -7,15 +7,32 @@ const MicrosoftIcon = () => (
   <svg
     className="h-8 w-8"
     xmlns="http://www.w3.org/2000/svg"
-    aria-label="Microsoft"
-    role="img"
-    viewBox="0 0 512 512"
+    x="0px"
+    y="0px"
+    width="100"
+    height="100"
+    viewBox="0 0 48 48"
   >
-    <rect width="512" height="512" rx="15%" fill="#ffffff" />
-    <path d="M75 75v171h171v-171z" fill="#f25022" />
-    <path d="M266 75v171h171v-171z" fill="#7fba00" />
-    <path d="M75 266v171h171v-171z" fill="#00a4ef" />
-    <path d="M266 266v171h171v-171z" fill="#ffb900" />
+    <path
+      fill="#ff5722"
+      d="M6 6H22V22H6z"
+      transform="rotate(-180 14 14)"
+    ></path>
+    <path
+      fill="#4caf50"
+      d="M26 6H42V22H26z"
+      transform="rotate(-180 34 14)"
+    ></path>
+    <path
+      fill="#ffc107"
+      d="M26 26H42V42H26z"
+      transform="rotate(-180 34 34)"
+    ></path>
+    <path
+      fill="#03a9f4"
+      d="M6 26H22V42H6z"
+      transform="rotate(-180 14 34)"
+    ></path>
   </svg>
 );
 

@@ -4,12 +4,11 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 
-const Facebook = () => (
+// Social Media Icons
+const FacebookIcon = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     className="h-8 w-8"
-    width="1em"
-    height="1em"
     viewBox="0 0 256 256"
   >
     <path
@@ -22,12 +21,11 @@ const Facebook = () => (
     ></path>
   </svg>
 );
-const Google = () => (
+
+const GoogleIcon = () => (
   <svg
     className="h-8 w-8"
     xmlns="http://www.w3.org/2000/svg"
-    width="200"
-    height="200"
     viewBox="0 0 48 48"
   >
     <path
@@ -48,12 +46,11 @@ const Google = () => (
     />
   </svg>
 );
-const Apple = () => (
+
+const AppleIcon = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     className="h-8 w-8"
-    width="1em"
-    height="1em"
     viewBox="0 0 368 432"
   >
     <path
@@ -63,49 +60,45 @@ const Apple = () => (
   </svg>
 );
 
+// Login Component
 const LoginComponent = () => {
   const router = useRouter();
 
-  const SignInWithGoogle = async () => {
+  const signInWithGoogle = async () => {
     try {
+      // Implement sign-in logic here
     } catch (error) {
-      console.error(error);
+      console.error("Sign-in error:", error);
     }
   };
+
   return (
-    <>
-      <div className="space-y-4">
-        <button
-          onClick={SignInWithGoogle}
-          className="flex w-full cursor-pointer items-center gap-3 rounded-lg bg-white px-4 py-2 text-black transition-all hover:bg-slate-200"
-        >
-          <span>
-            <Google />
-          </span>
-          <span className="text-xl">Sign in with Google</span>
-        </button>
-        <button className="flex w-full cursor-pointer items-center gap-3 rounded-lg bg-quaternary px-4 py-2 text-white transition-all hover:bg-slate-600">
-          <span>
-            <Apple />
-          </span>
-          <span className="text-xl">Sign in with Apple</span>
-        </button>
-        <button className="flex w-full cursor-pointer items-center gap-3 rounded-lg bg-blue-500 px-4 py-2 text-white transition-all hover:bg-blue-600">
-          <span>
-            <Facebook />
-          </span>
-          <span className="text-xl">Sign in with Facebook</span>
-        </button>
-      </div>
-    </>
+    <div className="space-y-4">
+      <button
+        onClick={signInWithGoogle}
+        className="flex w-full cursor-pointer items-center gap-3 rounded-lg bg-white px-4 py-2 text-black transition-all hover:bg-slate-200"
+      >
+        <GoogleIcon />
+        <span className="text-xl">Sign in with Google</span>
+      </button>
+      <button className="flex w-full cursor-pointer items-center gap-3 rounded-lg bg-quaternary px-4 py-2 text-white transition-all hover:bg-slate-600">
+        <AppleIcon />
+        <span className="text-xl">Sign in with Apple</span>
+      </button>
+      <button className="flex w-full cursor-pointer items-center gap-3 rounded-lg bg-blue-500 px-4 py-2 text-white transition-all hover:bg-blue-600">
+        <FacebookIcon />
+        <span className="text-xl">Sign in with Facebook</span>
+      </button>
+    </div>
   );
 };
 
-const Loginpage = () => {
+// Login Page
+const LoginPage = () => {
   return (
-    <div className='h-screen w-full bg-black/30 bg-[url("/login/pine-watt-2Hzmz15wGik-unsplash.jpg")] bg-cover backdrop-blur-md'>
+    <div className="h-screen cursor-default bg-gray-700 bg-[url('/login/pine-watt-2Hzmz15wGik-unsplash.jpg')] bg-cover">
       <div className="flex h-full w-full flex-col items-center justify-center">
-        <Link href="/">
+        <Link href="/" className="absolute left-2 top-2 md:left-5 md:top-3">
           <Image
             src="/ranchi's smile logo.png"
             className="w-60"
@@ -114,17 +107,33 @@ const Loginpage = () => {
             width={1000}
           />
         </Link>
-        <div className="rounded-lg bg-slate-300 bg-opacity-40 p-8 lg:p-10">
-          <div className="flex justify-center">
-            <h1 className="poppins-medium mb-4 text-3xl">Welcome Back</h1>
+        <div className="mx-2 rounded-lg bg-white bg-opacity-20 p-8 backdrop-blur-md lg:p-10">
+          <div className="flex flex-col justify-start">
+            <h1 className="poppins-regular text-3xl text-black">
+              Sign in to continue
+            </h1>
+            <span className="text-white md:text-slate-900">
+              {" "}
+              Ranchi&rsquo;s smile
+            </span>
           </div>
-          <div className="mt-8">
+          <div className="my-8 grid place-items-center">
             <LoginComponent />
           </div>
+          <span className="text-sm text-white">
+            By clicking on the sign in button, you agree to our{" "}
+            <a href="/login" className="text-blue-300">
+              Terms of Service
+            </a>{" "}
+            and{" "}
+            <a href="/login" className="text-blue-300">
+              Privacy Policy
+            </a>
+          </span>
         </div>
       </div>
     </div>
   );
 };
 
-export default Loginpage;
+export default LoginPage;

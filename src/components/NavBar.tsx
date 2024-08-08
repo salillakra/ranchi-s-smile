@@ -4,6 +4,7 @@ import SideBarMobile from "./SideBarMobile";
 import { LogIn } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
+import Logo from "./Logo/Logo";
 
 const Navbar = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -16,13 +17,7 @@ const Navbar = () => {
     <>
       <nav className="sticky top-0 z-20 flex h-16 items-center justify-between bg-[rgba(255,245,224,0.7)] p-0 backdrop-blur-md md:px-4 md:py-4">
         <Link href="/">
-          <Image
-            src="/ranchi's smile logo.png"
-            className="w-40 md:w-52"
-            alt="Ranchi's Smile logo"
-            height={200}
-            width={300}
-          />
+          <Logo color="black" className="p-1" />
         </Link>
         <div className="lg:hidden">
           <button

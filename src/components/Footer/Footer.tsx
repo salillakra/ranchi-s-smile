@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import Logo from "../Logo/Logo";
 
 export default function Footer() {
   const CurrentYear = new Date().getFullYear().toString();
@@ -13,13 +14,7 @@ export default function Footer() {
             href="/"
             className="inline-flex items-center"
           >
-            <Image
-              src="/ranchi's smile logo.png"
-              className="w-40 -translate-y-9 scale-125 md:w-64"
-              alt="Ranchi's Smile logo"
-              height={200}
-              width={200}
-            />
+            <Logo color="black" className="mb-5" />
           </Link>
           <div className="lg:max-w-sm">
             <p className="text-sm text-gray-800">
